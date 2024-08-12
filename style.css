@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    appearance: none;
+}
+
+body {
+    background-color: var(--bg--color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    
+}
+
+#container {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+  
+
+#app{
+    width: 300px;
+    justify-items: center;
+    display: grid;
+}
+
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-top: 1.6rem;
+    padding: 0; /* Ajuste conforme necessário */
+}
+
+#sounds-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-rows: repeat(2, 1fr);    /* 2 linhas */
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+button:nth-child(1) {
+    grid-area: 1 / 1; /* Primeiro quadrante (canto superior esquerdo) */
+}
+
+button:nth-child(2) {
+    grid-area: 1 / 2; /* Segundo quadrante (canto superior direito) */
+}
+
+button:nth-child(3) {
+    grid-area: 2 / 1; /* Terceiro quadrante (canto inferior esquerdo) */
+}
+
+button:nth-child(4) {
+    grid-area: 2 / 2; /* Quarto quadrante (canto inferior direito) */
+}
+
+  
+button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 6.4rem;
+    transition: transform .3s, background-color .3s;
+}
+
+button:hover {
+    transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+}
+
+
+#sounds button {
+    background-color: #E1E1E6; /* Fundo do botão */
+    width: 13.8rem; /* Largura do quadrado */
+    height: 15.2rem; /* Altura do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.4rem; /* Cantos arredondados para um estilo mais suave */
+    border: 2px solid transparent; /* Define uma borda transparente */
+    transition: background-color 0.3s, border-color 0.3s; /* Transição suave para o fundo e borda */
+}
+
+#sounds button.active {
+    background-color: #02799D; /* Cor de fundo quando o botão está ativo */
+    border-color: #02799D; /* Cor da borda quando o botão está ativo */
+}
+
+#timer {
+    font-size: 12rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
