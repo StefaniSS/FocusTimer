@@ -50,10 +50,10 @@ FocusTimer-Pomodoro/
    ```
 3. Abra o arquivo `index.html` em seu navegador preferido.
 
-## Contribuindo
+## Licença
 
-Se você deseja contribuir com este projeto, sinta-se à vontade para enviar um pull request ou abrir uma issue com sugestões de melhorias.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## Agradecimentos
+---
 
-Este projeto foi desenvolvido como parte do Explorer - Rocketseat, que forneceu a base de conhecimentos necessária para sua criação.
+Desenvolvido com 💜 por [Stefani Silva](https://github.com/StefaniSS).
